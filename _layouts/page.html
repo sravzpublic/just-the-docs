@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
+
 {{ content }}
+
+{%- include disqus_comments.html -%}
 
 {%- if site.disqus.shortname -%}
 {%- include disqus_comments.html -%}
