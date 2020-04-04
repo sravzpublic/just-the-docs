@@ -71,7 +71,6 @@ layout: table_wrappers
               {{ content }}
             {% endif %}
 
-          {% include disqus_comments.html %}
           {% if page.has_children == true and page.has_toc != false %}
             <hr>
             <h2 class="text-delta">Sravz Jobs Board</h2>
@@ -86,6 +85,10 @@ layout: table_wrappers
               {% endfor %}
             </ul>
           {% endif %}
+
+          {% include contact_us.html %}
+
+          {% include disqus_comments.html %}
 
           {% if site.footer_content != nil %}
             <hr>
