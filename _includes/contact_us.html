@@ -1,14 +1,24 @@
 <div>
-    <a href = 'mailto: contactus@sravz.com'>Apply</a>
-    <form
-    action='https://formspree.io/mjvegbqg' method='POST' enctype='multipart/form-data'>
-    <label> Subject: <input type='text' name='_subject'> </label>
-    <label>
-      Message:
-      <textarea name='message'></textarea>
-    </label>
-    <label> Your email: <input type='text' name='_replyto'> </label>
-    <label>  file: <input type='file' name='upload'> </label>
-    <button type='submit' >Send</button>
-    </form>
+  <a href='mailto: contactus@sravz.com'>Apply Via Eamil </a>
+  <form action='https://formspree.io/mjvegbqg' method='POST' enctype='multipart/form-data'>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" name='_replyto' aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject:</label>
+      <input class="form-control" name='_subject' id="subject">
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <input class="form-control" name='message' id="message">
+    </div>
+    <div class="form-group">
+      <label for="resume">Resume:</label>
+      <input class="form-control" name='resume' id="file">
+    </div>
+    <label> file:
+      <input type='file' name='upload'> </label>
+    <button type="submit" class="btn btn-primary">Submit</button>
 </div>
