@@ -4,3 +4,7 @@ layout: default
 
 <h1> Hello world </h1>
 {{ content }}
+
+{%- if site.disqus.shortname -%}
+{%- include disqus_comments.html -%}
+{%- endif -%}
